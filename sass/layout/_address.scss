@@ -1,0 +1,21 @@
+.address__text {
+  color: var(--footer-adr-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &--light {
+    color: var(--bg-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

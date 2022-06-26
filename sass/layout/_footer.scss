@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &-container {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &-box {
+    margin-right: 70px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: var(--bg-color);
+  }
+  &__mail-box {
+    margin-left: 93px;
+  }
+}

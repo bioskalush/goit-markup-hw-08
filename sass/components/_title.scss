@@ -1,0 +1,10 @@
+.title {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+  &--bottom-margin {
+    margin-bottom: 50px;
+  }
+}

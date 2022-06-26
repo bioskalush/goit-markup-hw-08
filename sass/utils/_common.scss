@@ -1,0 +1,49 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--bg-color);
+  font-family: "Roboto", "Helvetica Neue", "Verdana", "Tahoma", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &--dark {
+    background-color: var(--bg-section-color);
+  }
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.address--styles {
+  font-style: normal;
+  margin-top: 20px;
+}
