@@ -36,12 +36,25 @@ textarea {
   resize: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section--dark {
   background-color: var(--bg-section-color);
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -52,15 +65,39 @@ textarea {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.container--bottom-padding {
+  padding-bottom: 94px;
 }
 
 .address--styles {
   font-style: normal;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .none {
+    display: none;
+  }
 }
 
 .visually-hidden {
@@ -194,12 +231,17 @@ textarea {
 .title {
   color: var(--primary-text-color);
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   font-weight: 700;
 }
 .title--bottom-margin {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title--bottom-margin {
+    font-size: 36px;
+  }
 }
 
 .social {
@@ -547,11 +589,10 @@ textarea {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--footer-color);
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -559,11 +600,17 @@ textarea {
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-transform: uppercase;
   text-align: center;
   color: var(--bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero--margin {
   margin-left: auto;
@@ -572,29 +619,58 @@ textarea {
 .hero__title--margin {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
 
 .benefits {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
 }
 .benefits--bottom-margin {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 .benefits__image {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--bg-section-color);
   margin-bottom: 30px;
   height: 120px;
+  border-radius: 4px;
 }
-.benefits .benefits__item + .benefits__item {
-  margin-left: 30px;
+.benefits__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .benefits__title {
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 .benefits__parafrag {
   font-size: 14px;
@@ -605,17 +681,22 @@ textarea {
 
 .works {
   display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
   justify-content: center;
 }
-.works .works__item + .works__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .works {
+    font-size: 36px;
+  }
 }
 .works__item {
   position: relative;
+  width: calc((100% - 30px) / 3);
 }
 .works__text {
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -640,19 +721,27 @@ textarea {
 
 .commands {
   display: flex;
-  justify-content: center;
-}
-.commands .commands__item + .commands__item {
-  margin-left: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .commands .commands__item {
   background-color: var(--bg-color);
 }
 .commands__item {
-  width: 270px;
+  width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .commands__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .commands__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .commands__title {
   margin-bottom: 10px;
@@ -671,23 +760,32 @@ textarea {
 }
 .commands--margin {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .partners {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .partners__item {
-  margin-left: 30px;
+  width: calc((100% - 30px) / 2);
 }
-.partners__item:nth-child(1) {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .partners__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .partners__link {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--clients-color);
   fill: var(--clients-color);

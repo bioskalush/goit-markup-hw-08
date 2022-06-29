@@ -21,11 +21,22 @@ textarea {
   resize: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &--dark {
     background-color: var(--bg-section-color);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -37,13 +48,32 @@ textarea {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+  &--bottom-padding {
+    padding-bottom: 94px;
+  }
 }
 
 .address--styles {
   font-style: normal;
   margin-top: 20px;
+}
+
+.none {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
