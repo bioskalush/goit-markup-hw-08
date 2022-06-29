@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  & &__item + &__item {
-    // margin-left: 30px;
-  }
+
   & &__item {
     background-color: var(--bg-color);
   }

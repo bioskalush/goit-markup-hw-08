@@ -1,17 +1,28 @@
 .portfolio-nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
   align-items: center;
-  &__item {
-    margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
-  &__item:last-of-type {
-    margin-right: 0px;
-  }
+
+  // &__item {
+  //   width: calc((100% - 24px) / 3);
+  // }
 }
 
 .portfolio-nav__margin {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__btn {

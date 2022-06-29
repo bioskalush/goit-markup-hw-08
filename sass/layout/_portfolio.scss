@@ -1,13 +1,24 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  // justify-content: center;
+  gap: 30px;
+  // margin-right: -30px;
+  // margin-bottom: -30px;
   &__item {
-    flex-basis: calc(100% / 3 - 30px);
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    // flex-basis: calc(100% / 3 - 30px);
+    // width: 370px;
+
+    // margin-right: 30px;
+    // margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+      // height: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
   }
   &__container {
     padding: 20px 24px;
@@ -35,6 +46,12 @@
     height: 294px;
     /* при вказаних 100% висота блока стає 298, що перевищує висоту картинки */
     overflow: hidden;
+    @media screen and (min-width: 768px) {
+      height: 294px;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 294px;
+    }
   }
 
   &__text {
