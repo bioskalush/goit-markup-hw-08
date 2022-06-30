@@ -167,13 +167,28 @@
           <h2 class="title title--bottom-margin">Наша команда</h2>
           <ul class="list commands">
             <li class="commands__item">
-              <img
-                class="img"
-                src="./images/comand1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/comand1-1x.jpg x1, ./images/comand1-2x.jpg x2"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/comand1-tab-1x.jpg x1, ./images/comand1-tab-2x.jpg x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/comand1-mob-1x.jpg x1, ./images/comand1-mob-2x.jpg x2"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="img"
+                  src="./images/comand1-1x.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="commands--margin">
                 <h3 class="commands__title">Игорь Демьяненко</h3>
                 <p lang="en" class="commands__text">Product Designer</p>
@@ -216,7 +231,7 @@
             <li class="commands__item">
               <img
                 class="img"
-                src="./images/comand2.jpg"
+                src="./images/comand2-1x.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
@@ -263,7 +278,7 @@
             <li class="commands__item">
               <img
                 class="img"
-                src="./images/comand3.jpg"
+                src="./images/comand3-1x.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
@@ -310,7 +325,7 @@
             <li class="commands__item">
               <img
                 class="img"
-                src="./images/comand4.jpg"
+                src="./images/comand4-1x.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
