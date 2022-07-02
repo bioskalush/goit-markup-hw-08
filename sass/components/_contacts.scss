@@ -1,10 +1,11 @@
 .contacts {
-  display: flex;
+  display: none;
+  // display: flex;
   margin-left: auto;
 }
 
 .contacts__link {
-  display: flex;
+  // display: flex;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -33,4 +34,3 @@
     color: var(--accent-color);
   }
 }
-

@@ -1,9 +1,113 @@
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   &__section {
     display: flex;
+    position: relative;
     align-items: center;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.mobile__menu-open,
+.mobile__menu-close {
+  display: block;
+  margin-left: auto;
+  border-color: transparent;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.mobile__menu-btn {
+  cursor: pointer;
+  // position: absolute;
+}
+
+.mobile-menu {
+  // display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px 48px 40px;
+
+  background-color: var(--bg-color);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mobile-menu__link:hover {
+  color: var(--accent-color);
+}
+
+.mobile-contacts {
+  margin-top: 302px;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-contacts__link--color {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-social {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mobile-social__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+.mobile-social__link::before {
+  position: absolute;
+  left: 135px;
+  bottom: 48px;
+  content: "";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.mobile-social--margin:not(:last-child) {
+  margin-right: 20px;
 }
