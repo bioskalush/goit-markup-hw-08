@@ -48,6 +48,9 @@
     align-items: center;
     margin-top: 60px;
     @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      margin-top: 0px;
+
       align-items: inherit;
     }
   }
@@ -59,7 +62,6 @@
   align-items: center;
   @media screen and (min-width: 1200px) {
     align-items: inherit;
-    margin-right: 93px;
   }
 }
 
